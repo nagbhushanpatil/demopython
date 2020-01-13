@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+<script language="javaScript" type="text/javaScript">
+
+// function combine(form) {
+// form.field3.value = form.OCID.value + form.ICID.value;
+// }
+
+</script>
+    
+<h2>Dryer Automat Configuration</h2>
+ 
+
+
+
+  <br><div ng-app="myApp" ng-controller="myCtrl"  >
+    <button type="button" ng-click="exportToFile()">Configure </button><br>
+  <form name="myForm" action="/action_page.php">
+     <fieldset id="Output Channel ID">
+  Fan 1: THS# ID:
+   
+    <select ng-model="a1">
+        <option   value="d" ng-selected="n2">{{d}}</option>
+        <option   value="1" >1</option>
+    <option   value="2" >2</option>
+    <option  value="3">3</option>
+      </select> 
+
+      <br>
+      HIGH <input type="text" ng-model="a2"   value="45" maxlength="2" size="2">&#8451
+               <select ng-model="a3">
+        <option value="A" selected>AND</option>
+        <option value="O">OR</option>
+          </select><input type="text" ng-model="a4" value="60"maxlength="2"size="2">% <br>
+          MED <input type="text" ng-model="a5" value="35" maxlength="2" size="2">&#8451
+          <select ng-model="a6">
+            <option   value="d1" ng-selected="n2">{{d1}}</option>
+            <option value="A">AND</option>
+            <option value="O">OR</option>
+              </select>
+          <input type="text" ng-model="a7" value="50" maxlength="2" size="2">%<br>
+          LOW <input type="text" ng-model="a8" value="30" maxlength="2"size="2">&#8451
+          <select ng-model="a9">
+            <option   value="d2" ng-selected="n2">{{d2}}</option>
+            <option value="A">AND</option>
+            <option value="O" selected>OR</option>
+              </select>
+               <input type="text" ng-model="a10" value="40" maxlength="2"size="2">% <br><br>
+Fan 2: THS# ID:
+ <select ng-model="b1">
+        <option   value="bd" ng-selected="b2">{{bd}}</option>
+        <option   value="1" >1</option>
+    <option   value="2" >2</option>
+    <option  value="3">3</option>
+      </select> 
+
+      <br>
+      HIGH <input type="text" ng-model="b2"   value="45" maxlength="2" size="2">&#8451
+               <select ng-model="b3">
+        <option value="A" selected>AND</option>
+        <option value="O">OR</option>
+          </select><input type="text" ng-model="b4" value="60"maxlength="2"size="2">% <br>
+          MED <input type="text" ng-model="b5" value="35" maxlength="2" size="2">&#8451
+          <select ng-model="b6">
+            <option   value="bd1" ng-selected="n2">{{bd1}}</option>
+            <option value="A">AND</option>
+            <option value="O">OR</option>
+              </select>
+          <input type="text" ng-model="b7" value="50" maxlength="2" size="2">%<br>
+          LOW <input type="text" ng-model="a8" value="30" maxlength="2"size="2">&#8451
+          <select ng-model="b9">
+            <option   value="bd2" ng-selected="n2">{{bd2}}</option>
+            <option value="A">AND</option>
+            <option value="O" selected>OR</option>
+              </select>
+               <input type="text" ng-model="b10" value="40" maxlength="2"size="2">% <br><br>
+Fan 3: THS# ID:
+  <select ng-model="c1">
+        <option   value="cd" ng-selected="c2">{{cd}}</option>
+        <option   value="1" >1</option>
+    <option   value="2" >2</option>
+    <option  value="3">3</option>
+      </select> 
+
+      <br>
+      HIGH <input type="text" ng-model="c2"   value="45" maxlength="2" size="2">&#8451
+               <select ng-model="c3">
+        <option value="A" selected>AND</option>
+        <option value="O">OR</option>
+          </select><input type="text" ng-model="c4" value="60"maxlength="2"size="2">% <br>
+          MED <input type="text" ng-model="c5" value="35" maxlength="2" size="2">&#8451
+          <select ng-model="c6">
+            <option   value="cd1" ng-selected="n2">{{cd1}}</option>
+            <option value="A">AND</option>
+            <option value="O">OR</option>
+              </select>
+          <input type="text" ng-model="c7" value="50" maxlength="2" size="2">%<br>
+          LOW <input type="text" ng-model="c8" value="30" maxlength="2"size="2">&#8451
+          <select ng-model="c9">
+            <option   value="cd2" ng-selected="n2">{{cd2}}</option>
+            <option value="A">AND</option>
+            <option value="O" selected>OR</option>
+              </select>
+               <input type="text" ng-model="c10" value="40" maxlength="2"size="2">% <br><br>
+Fan 4: THS# ID:
+   <select ng-model="q1">
+        <option   value="qd" ng-selected="q2">{{qd}}</option>
+        <option   value="1" >1</option>
+    <option   value="2" >2</option>
+    <option  value="3">3</option>
+      </select> 
+
+      <br>
+      HIGH <input type="text" ng-model="q2"   value="45" maxlength="2" size="2">&#8451
+               <select ng-model="q3">
+        <option value="A" selected>AND</option>
+        <option value="O">OR</option>
+          </select><input type="text" ng-model="q4" value="60"maxlength="2"size="2">% <br>
+          MED <input type="text" ng-model="q5" value="35" maxlength="2" size="2">&#8451
+          <select ng-model="q6">
+            <option   value="qd1" ng-selected="n2">{{qd1}}</option>
+            <option value="A">AND</option>
+            <option value="O">OR</option>
+              </select>
+          <input type="text" ng-model="q7" value="50" maxlength="2" size="2">%<br>
+          LOW <input type="text" ng-model="q8" value="30" maxlength="2"size="2">&#8451
+          <select ng-model="q9">
+            <option   value="qd2" ng-selected="n2">{{qd2}}</option>
+            <option value="A">AND</option>
+            <option value="O" selected>OR</option>
+              </select>
+               <input type="text" ng-model="q10" value="40" maxlength="2"size="2">% <br><br>
+ Back Up Fan 5: THS# ID:
+   <select name="e1">
+        <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+      </select> 
+
+   <br>
+ <input type="text" name="e2" value="45" maxlength="2"size="2">&#8451
+  <select name="e3">
+    <option value="A">AND</option>
+    <option value="O">OR</option>
+      </select>
+  <input type="text" name="e4" value="60"maxlength="2"size="2">% <br> 
+Heater: THS# ID:
+  <select name="ai">
+        <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+      </select> 
+
+   <br>
+  <input type="text" name="aj" value="45" maxlength="2"size="2">&#8451
+<select name="ak">
+    <option value="A">AND</option>
+    <option value="O">OR</option>
+      </select>
+  <input type="text" name="al" value="60"maxlength="2"size="2">% <br><br>
+         
+
+  Tarp Motor 1 Forward <input type="text" name="aa" value="0600" maxlength="4"size="4"> hrs
+  <input type="text" name="ab" value="0600"  maxlength="4" size="4">seconds<br> 
+  Tarp Motor 1 Reverse<input type="text" name="ac" value="1800" maxlength="4"size="4"> hrs
+  <input type="text" name="ad" value="0600" maxlength="4"size="4">seconds<br> 
+  Tarp Motor 2 Forward <input type="text" name="ae" value="0610" maxlength="4"size="4">hrs
+  <input type="text" name="af" value="0300" maxlength="4"size="4">seconds<br>
+  Tarp Motor 2 Reverse<input type="text" name="ag" value="1810" maxlength="4"size="4">hrs
+  <input type="text" name="ah" value="0300"maxlength="4"size="4">seconds<br><br> 
+         
+  Lights Switch ON time<input type="text" name="ao" value="1900" maxlength="4"size="4">hrs
+  <input type="text" name="ap" value="300"maxlength="3"size="3">minutes (max 999)<br><br> 
+         
+<br>------------------------------------------------------------<br>
+Other settings: <br>
+  Sense & Log Interval:
+     <input type="text" name="am" value="0600" maxlength="4"size="2"> seconds<br><br>
+  Name: 
+     <input type="text" name="an" value="1.0" size="8" maxlength="3"><br><br>
+   </fieldset>
+  <button type="button" ng-click="exportToFile()">Configure </button>
+  
+    
+         
+       
+</form> 
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<script>
+     
+    var app = angular.module("myApp", []);
+   
+     app.controller("myCtrl", function($scope,$http) { 
+    		$http.get("https://api.jsonbin.io/b/5e18913bb236b871b35f7011/latest").then(function (response) {
+                $scope.dd = response.data;
+                var dd= $scope.dd
+                $scope.a1=dd.a1;
+                $scope.a2=dd.a2;
+                $scope.a3=dd.a3;
+                $scope.a4=dd.a4;
+                $scope.a5=dd.a5;
+                $scope.a6=dd.a6;
+                $scope.a7=dd.a7;
+                $scope.a8=dd.a8;
+                $scope.a9=dd.a9;
+                $scope.a10=dd.a10;
+                 $scope.d=dd.a1;
+                  $scope.d1=dd.a6;
+                   $scope.d2=dd.a9;
+                
+                $scope.b1=dd.b1;
+                $scope.b2=dd.b2;
+                $scope.b3=dd.b3;
+                $scope.b4=dd.b4;
+                $scope.b5=dd.b5;
+                $scope.b6=dd.b6;
+                $scope.b7=dd.b7;
+                $scope.b8=dd.b8;
+                $scope.b9=dd.b9;
+                $scope.b10=dd.b10;
+                 $scope.bd=dd.b1;
+                  $scope.bd1=dd.b6;
+                   $scope.bd2=dd.b9;
+
+                $scope.c1=dd.c1;
+                $scope.c2=dd.c2;
+                $scope.c3=dd.c3;
+                $scope.c4=dd.c4;
+                $scope.c5=dd.c5;
+                $scope.c6=dd.c6;
+                $scope.c7=dd.c7;
+                $scope.c8=dd.c8;
+                $scope.c9=dd.c9;
+                $scope.c10=dd.c10;
+                 $scope.cd=dd.c1;
+                  $scope.cd1=dd.c6;
+                   $scope.cd2=dd.c9;
+
+                   $scope.q1=dd.q1;
+                $scope.q2=dd.q2;
+                $scope.q3=dd.q3;
+                $scope.q4=dd.q4;
+                $scope.q5=dd.q5;
+                $scope.q6=dd.q6;
+                $scope.q7=dd.q7;
+                $scope.q8=dd.q8;
+                $scope.q9=dd.q9;
+                $scope.q10=dd.q10;
+                 $scope.qd=dd.q1;
+                  $scope.qd1=dd.q6;
+                   $scope.qd2=dd.q9;
+
+
+
+               });
+         
+       
+        $scope.exportToFile = function(){
+            var myObj;
+            myObj = {"a1":$scope.a1,"a2":$scope.a2,"a3":$scope.a3,"a4":$scope.a4,"a5":$scope.a5,
+            "a6":$scope.a6,"a7":$scope.a7,"a8":$scope.a8,
+            "a9":$scope.a9,"a10":$scope.a10,
+            "b1":$scope.b1,"b2":$scope.b2,"b3":$scope.b3,"b4":$scope.b4,"b5":$scope.b5,
+            "b6":$scope.b6,"b7":$scope.b7,"b8":$scope.b8,
+            "b9":$scope.b9,"b10":$scope.b10,
+            "c1":$scope.c1,"c2":$scope.c2,"c3":$scope.c3,"c4":$scope.c4,"c5":$scope.c5,
+            "c6":$scope.c6,"c7":$scope.c7,"c8":$scope.c8,
+            "c9":$scope.c9,"c10":$scope.c10,
+            "q1":$scope.q1,"q2":$scope.q2,"q3":$scope.q3,"q4":$scope.q4,"q5":$scope.q5,
+            "q6":$scope.q6,"q7":$scope.q7,"q8":$scope.q8,
+            "q9":$scope.q9,"q10":$scope.q10
+
+
+
+
+
+
+        }
+            
+             var datat=JSON.stringify(myObj);
+            let req = new XMLHttpRequest();
+			req.onreadystatechange = () => {
+ 			 if (req.readyState == XMLHttpRequest.DONE) {
+    									console.log(req.responseText);
+ 						 }	
+						};
+
+		req.open("PUT", "https://api.jsonbin.io/b/5e18913bb236b871b35f7011", true);
+		req.setRequestHeader("Content-type", "application/json");
+		req.send(datat);    
+
+       
+       alert("Successful Configured")
+        
+         
+    }//ExportConfig
+       });//controler
+
+    
+
+</script>
+
+
+</body>
+</html>
